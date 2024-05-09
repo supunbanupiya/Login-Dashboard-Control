@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<p>@ViewBag.myname</p>
+@if(ViewBag.myname!=null)
+{
+    <a href="@Url.Action("logout","User")">Logout</a>
+}
+
+
